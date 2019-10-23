@@ -14,8 +14,8 @@ type Trainer struct {
 
 type PokemonTrainer interface {
 	Add(pokemon Pokemon) error
-	//ChooseYou(pokemonName string) (Pokemon, error)
-	//Free(pokemonName string) error
+	ChooseYou(pokemonName string) (Pokemon, error)
+	Free(pokemonName string) error
 }
 
 type PokemonLimitError struct{}
